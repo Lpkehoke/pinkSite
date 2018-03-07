@@ -1,0 +1,120 @@
+.header {
+	.bg__info {
+		background: $main-color;
+		color: $white;
+		min-height: 4.125em;
+		@include center();
+
+		.header__info-inerWrapper {
+			justify-content: space-between;
+
+			.header-info__left {
+				display: flex;
+
+				.header-info__addres {
+					@include center();
+
+					.header__locatinIcon {
+						font-size: 12px;
+					}
+				}
+
+				.header-info__phone {
+					@include center();
+
+					.header__phoneIcon {
+						transform: rotate(85deg);
+						font-size: 12px;
+					}
+
+					.header__phoneNumber {
+						color: $white;
+					}
+				}
+			}
+
+			.header-info__right {
+				display: flex;
+				flex-grow: 1;
+
+				.header__info-search-div {
+					position: relative;
+
+					.header__info-search {
+						border: 1px solid $white/5*4;
+						width: 16.375em;
+						border-radius: 0.2em;
+						outline: none;
+						padding: 5px;
+						padding-left: 10px;
+					}
+
+					.header__searchIcon {
+						position: absolute;
+						right: 10px;
+						top: 10px;
+						color: black;
+						cursor: pointer;
+					}
+
+				}
+			}
+		}
+	}
+
+	.bg__secondLine {
+		background: $white;
+		color: $second-color;
+		min-height: 6.25em;
+		@include center();
+		.header__nav {
+			@include center();
+			flex-grow: 1;
+
+			&:nth-child(3) {
+				flex-grow: 0;
+			}
+
+			.header-nav__main {
+				@include center();
+				flex-grow: 1;
+				margin: 0;
+				padding-left: 0;
+				font-weight: bold;
+
+				li {
+					list-style-type: none;
+					cursor: pointer;
+					@include center();
+					a {
+						letter-spacing: 0.2em;
+						color: $second-color;
+					}
+
+					.header__purchaseIcon {
+						font-size: 1.2em;
+					}
+				}
+
+				li.header__purchase {
+					margin-left: 1.5em;
+					position: relative;
+
+					.header__numPurchase {
+						@include center();
+						justify-content: center;
+						font-size: 0.7em;
+						position: absolute;
+						background: $main-color;
+						color: $white;
+						height: 1.5em;
+						width: 1.5em;
+						border-radius: 100%;
+						top: -1.4em;
+						right: 0em;
+					}
+				}
+			}
+		}
+	}
+}

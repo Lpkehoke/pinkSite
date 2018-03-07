@@ -1,0 +1,27 @@
+@import 'include/mixin.scss';
+@import 'include/color.scss';
+
+.__submenu {
+	height: 0;
+	width: 0;
+	border: 0.2em solid transparent;
+	border-top-color: $second-color;
+	cursor: pointer;
+}
+
+html,
+body {
+	width: 100%;
+	min-height: 100%;
+}
+
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	font-size: 16px;
+	font-family: 'Quattrocento Sans', sans-serif;
+
+	@import 'piece/header/style.scss'; // include header
+}
+
+@import 'include/mediaScreen.scss';

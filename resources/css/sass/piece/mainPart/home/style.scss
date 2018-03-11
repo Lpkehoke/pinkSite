@@ -1,0 +1,363 @@
+.main-part-home {
+	.main-part__part:nth-child(2n) {
+		background: $white;
+	}
+
+	.main-part__slider {
+		min-height: 39.75em;
+
+		.container {
+
+			.row {
+				width: 100%;
+				height: 100%;
+
+				.main-part-slider {
+					width: 100%;
+					position: relative;
+
+					@include center();
+
+					.main-part-slider__excise {
+						outline: none;
+					}
+
+					.main-part__strawberry {
+						background: $white;
+						border-radius: 0.4em;
+
+						h1 {
+							font-family: 'Yellowtail', cursive;
+							color: $pink;
+						}
+
+						h3 {
+							font-weight: bold;
+						}
+
+						.main-part__slide-priceAndByu {
+							display: flex;
+							margin-top: 3.75em;
+
+							.main-part-slide__price {
+								@include center();
+
+								h3 {
+									&:nth-child(1) {
+										color: #d0d0d0;
+										text-decoration: line-through;
+										font-weight: 100;
+										margin-right: 1em;
+									}
+									&:nth-child(2) {
+										color: $blue;
+										font-weight: bold;
+										font-size: 2.625em;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.main-part__newProduct {
+		min-height: 134.625em;
+		display: flex;
+		color: black;
+		flex-direction: column;
+
+		.part-new__baners-wrap {
+
+			.part-new__baners {
+				color: $white;
+
+				.part-new__baner {
+
+					.part-new__inerBaner {
+						padding: 1em 2em;
+						height: 260px;
+						.part-new__baner-h {
+							display: flex;
+							align-items: center;
+							padding: 0.5em;
+
+							img {
+								margin-right: 1em;
+							}
+						}
+
+						.part-new__about {
+							font-family: 'Quattrocento', serif;
+							overflow: hidden;
+							height: 6.25em;
+						}
+					}
+				}
+				.part-new__baner-0 {
+					@include makeBorder($pink);
+				}
+
+				.part-new__baner-1 {
+					@include makeBorder($blue);
+				}
+
+				.part-new__baner-2 {
+					@include makeBorder($green);
+				}
+
+			}
+		}
+
+		.main-part-new__horizont {
+			min-height: 800px;
+
+			.main-part-hor__part {
+				display: flex;
+				margin-bottom: 30px;
+				border: 2px solid #f0f0f0;
+				border-radius: 0.5em;
+
+				div {
+					display: flex;
+				}
+
+				.main-part-hor__img-div {
+					padding: 0;
+					position: relative;
+
+					&:nth-child(2) {
+						justify-content: flex-end;
+					}
+
+					div {
+						@include makeTag(33px, $green);
+					}
+
+					.main-part-hor__tag-new {
+						top: -22px;
+						right: -26px;
+					}
+				}
+
+				.main-part-hor__discription {
+					flex-direction: column;
+					padding: 0;
+					justify-content: center;
+					padding: 0 1em;
+
+					h3 {
+						font-weight: bold;
+					}
+
+					.__priceNumControllerAdd {
+						border-top: 1px solid #f0f0f0;
+						margin-top: 30px;
+						padding-top: 30px;
+						padding-bottom: 1em;
+						align-items: center;
+					}
+				}
+
+				.main-part-hor__discription-right {
+					padding-right: 30px;
+				}
+
+				.main-part-hor__discription-left {
+					padding-left: 30px;
+				}
+			}
+		}
+
+		.__verticale-product {
+			.__hot {
+				border-color: $pink;
+				border-bottom-color: transparent;
+				border-left-color: transparent;
+			}
+		}
+	}
+
+	.main-part__statistic {
+		min-height: 20em;
+		color: $white;
+		.row {
+
+			@include center();
+			width: 100%;
+			height: 100%;
+
+			.col-md-2 {
+				text-align: center;
+
+				.main-part-statistic__line {
+					width: 1.875em;
+					height: 0.125em;
+					background: $pink;
+					margin: auto;
+					margin-bottom: 1em;
+				}
+			}
+		}
+	}
+
+	.main-part__nextProduct {
+		min-height: 1840px;
+		flex-direction: column;
+
+		.__verticale-product {
+			margin-bottom: 30px;
+		}
+
+		.__hot {
+			border-color: $pink;
+			border-bottom-color: transparent;
+			border-left-color: transparent;
+		}
+	}
+
+	.main-part__reviews {
+		min-height: 466px;
+
+		.container {
+			.row {
+				width: 100%;
+				height: 100%;
+
+				.__slider {
+
+					@include center();
+
+					.main-part-reviews__review {
+						background: $white;
+						padding: 30px;
+						display: flex;
+
+						.main-part-reviews__person {
+							text-align: center;
+							margin-right: 30px;
+
+							.main-part-reviews__avatar {
+								width: 100px;
+								height: 100px;
+								border-radius: 100%;
+								background: $white/5*4;
+							}
+
+							i {
+								padding: 4px;
+								color: $blue;
+							}
+
+							span {
+								margin-top: 15px;
+								display: flex;
+								font-weight: bold;
+							}
+						}
+
+						.main-part-reviews__txt-div {
+							@include center();
+							position: relative;
+
+							h3 {
+								position: absolute;
+								// top: 0;
+								left: -26px;
+								font-size: 72px;
+								color: $pink;
+							}
+
+							span {
+								font-size: 20px;
+								max-height: 90px;
+								overflow: hidden;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.main-part__blog {
+		min-height: 1435px;
+
+		.row {
+			justify-content: center;
+		}
+
+		.main-part-blog__post {
+			display: flex;
+			margin: 0 0 30px 0;
+
+			.main-part-blog__post-iner {
+				display: flex;
+				flex-direction: column;
+				border: 2px solid #f0f0f0;
+				margin: 0 -4px;
+				flex-grow: 1;
+
+				.main-part-blog-post__main-img {
+					width: 100%;
+					height: 312px;
+					background: $white/5*4;
+					position: relative;
+
+					.main-part-blog-post__date {
+						@include makeArrow(bottom, 50px, $pink)
+						border-right-color: $pink;
+						right: 0;
+						bottom: 0;
+						color: $white;
+						font-weight: bold;
+
+						div {
+							position: absolute;
+							left: 15px;
+							text-align: center;
+						}
+					}
+				}
+
+				.main-part-blog-post__txt-div {
+					padding: 30px;
+					overflow: hidden;
+					margin-bottom: 30px;
+
+					h3 {
+						color: $blue;
+						margin-bottom: 30px;
+					}
+				}
+			}
+		}
+
+		.main-part-blog-post__btnView-div {
+			button {
+				width: 264px;
+				height: 46px;
+				background: transparent;
+				color: $pink;
+				border: 1px solid $pink;
+				margin: 18px 48px;
+				border-radius: 2em;
+				text-transform: uppercase;
+				outline: none;
+				font-weight: bold;
+			}
+		}
+	}
+
+	// this ellement repeats (loop)
+	.main-parrt-new__header {
+			@include center();
+			flex-direction: column;
+			font-weight: bold;
+			margin-top: 80px;
+			margin-bottom: 50px;
+			text-align: center;
+	}
+}

@@ -4,12 +4,12 @@
 
 	.footer__first {
 		padding-top: 3.125em;
-		padding-bottom: 4.375em;
+		padding-bottom: 41px;
 
 		.footer__column {
 
 			h3 {
-				margin-bottom: 1.875em;
+				margin-bottom: 18px;
 			}
 
 			div {
@@ -50,7 +50,7 @@
 				margin: -0.25em -0.1em;
 
 					img {
-						margin: 0.35em 0.25em;
+						margin: 11px 4px;
 					}
 				}
 
@@ -62,9 +62,13 @@
 
 					img {
 						cursor: pointer;
-						margin: 0 0.3125em;
+						margin: 0 3.25px;
 					}
 				}
+			}
+
+			&:nth-child(4) {
+				padding-left: 22px;
 			}
 		}
 	}

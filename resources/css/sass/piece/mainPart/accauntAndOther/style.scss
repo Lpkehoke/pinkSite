@@ -1,0 +1,316 @@
+.main-part__registr-wrapper {
+	display: flex;
+	justify-content: center;
+
+	.main-part__registr {
+		margin: 93px 0 100px 0;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		h2 {
+			margin: 0;
+			font-weight: bold;
+		}
+
+		.registr__steps {
+			margin-top: 20px;
+			.registr__steps-num {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+
+				.registr__steps-img {
+					width: 48px;
+					height: 48px;
+					color: $blue;
+					background: $white;
+					border: 1px solid $blue;
+					border-radius: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					font-size: 26px;
+					font-weight: bold;
+					cursor: pointer;
+
+					&.__active {
+						background: $blue;
+						color: $white;
+					}
+
+					&:first-child {
+						margin-left: 15px;
+					}
+
+					&:last-child {
+						margin-right: 15px;
+					}
+				}
+
+				.__devide {
+					width: 39px;
+					position: static;
+				}
+			}
+
+			.registr__steps-txt {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				margin: 0 3px 0 -6px;
+				font-weight: bold;
+
+				span.__active {
+					color: $blue;
+				}
+			}
+		}
+
+		.registr__form {
+			border: 1px solid $white/5*4;
+			border-radius: 5px;
+			margin-top: 22px;
+			padding: 24px 32px 32px 26px;
+
+			form {
+				display: flex;
+				justify-content: center;
+				flex-direction: column;
+				align-items: center;
+				div {
+					display: flex;
+					flex-direction: column;
+					margin-bottom: 14px;
+
+					input {
+						height: 34px;
+						border-radius: 5px;
+						border: 1px solid $white/5*4;
+						padding: 14px;
+					}
+				}
+
+				button {
+					width: 262px;
+					height: 45px;
+					border: 1px solid $pink;
+					background: $white;
+					border-radius: 26px;
+					color: $pink;
+					font-weight: bold;
+					margin-top: 20px;
+					letter-spacing: 3.5px;
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+
+	.main-part__accountInfo {
+		margin: 100px auto;
+
+		.accountInfo__btns {
+			display: flex;
+			button {
+				height: 72px;
+				border-bottom: 0;
+				color: $blue;
+				background: $white;
+				font-weight: bold;
+				outline: none;
+				margin: 0;
+				text-transform: uppercase;
+				letter-spacing: 3.5px;
+				padding: 0 28px;
+
+				&.__active {
+					background: $blue;
+					color: $white;
+				}
+			}
+		}
+
+		.accountInfo__places {
+			display: flex;
+			flex-direction: column;
+			border: 1px solid $blue;
+
+
+			.accountInfo__infoPlace-div {
+				display: flex;
+				justify-content: space-between;
+				border-bottom: 1px solid $white/5*4;
+				padding: 9px 0;
+
+				span:nth-child(1) {
+					font-weight: bold;
+				}
+
+				span:nth-child(2) {
+					color: $blue;
+				}
+
+				&.accountInfo__checkBox-div {
+					color: $blue;
+					.__checkbox {
+						width: 13px;
+					}
+
+				}
+			}
+
+			button {
+				height: 45px;
+				border: 1px solid $pink;
+				background: $white;
+				border-radius: 26px;
+				color: $pink;
+				font-weight: bold;
+				margin-top: 20px;
+				letter-spacing: 3.5px;
+				text-transform: uppercase;
+				margin: 15px auto;
+			}
+		}
+	}
+
+	.main-part__cart {
+		margin: 100px 5px;
+		border: 1px solid $blue;
+		width: 750px;
+		border-radius: 5px;
+
+		.cart__header {
+			height: 80px;
+			background: $blue;
+			color: $white;
+			font-size: 26px;
+			font-weight: bold;
+			padding: 20px 50px;
+			border-radius: 5px 5px 0 0;
+		}
+
+		.cart__main {
+
+			.cart__order {
+				display: flex;
+				justify-content: space-between;
+				border-bottom: 1px solid $white/5*4;
+
+				.cart-order__information {
+					display: flex;
+					padding: 15px 0;
+
+					.cart-order__img-div {
+						width: 56px;
+						height: 56px;
+						background: $white/5*4;
+						border-radius: 5px;
+					}
+
+					.cart-order__priceText {
+						font-weight: bold;
+						margin-left: 14px;
+						margin-top: 4px;
+
+						.cart-order__price {
+							color: $blue;
+						}
+					}
+				}
+
+				.__numController {
+					input {
+						width: 27px;
+					}
+
+					div {
+						padding-left: 0.1em;
+						line-height: 17px;
+					}
+				}
+			}
+
+			.cart__allPrice-div {
+				display: flex;
+				justify-content: space-between;
+				font-size: 26px;
+				color: $blue;
+				margin-top: 28px;
+			}
+
+			.cart__buttons {
+				margin-top: 4px;
+				display: flex;
+				justify-content: space-between;
+
+				button {
+					height: 45px;
+					border-radius: 26px;
+					font-weight: bold;
+					letter-spacing: 3.5px;
+					margin: 15px 0;
+					text-transform: uppercase;
+					padding: 0 47px;
+				}
+
+				button:nth-child(1) {
+					border: 1px solid $pink;
+					background: $white;
+					color: $pink;
+				}
+
+				button:nth-child(2) {
+					border: 0;
+					background: $pink;
+					color: $white;
+				}
+			}
+		}
+	}
+
+	.main-part__about {
+		margin-top: 90px;
+
+		.main-parrt-new__header {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-bottom: 45px;
+
+			h2 {
+				margin: 0;
+			}
+		}
+
+		.about__main {
+			margin-bottom: 102px;
+
+			.col-md-8 {
+				padding: 0;
+
+				.about__img-wrapper {
+					.about__img-div {
+						background: $white/5*4;
+						border-radius: 5px;
+						height: 420px;
+					}
+				}
+			}
+
+			.about__txt-wrapper {
+				.about__txt {
+					margin-top: -5px;
+					padding-left: 7px;
+					line-height: 1.75;
+
+					p {
+						margin-bottom: 9px;
+					}
+				}
+			}
+		}
+	}
+}

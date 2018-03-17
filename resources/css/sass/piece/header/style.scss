@@ -5,6 +5,10 @@
 		min-height: 4.125em;
 		@include center();
 
+		.header__logo {
+			cursor: pointer;
+		}
+
 		.header__info-inerWrapper {
 			justify-content: space-between;
 

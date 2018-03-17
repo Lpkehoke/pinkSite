@@ -26,12 +26,9 @@
 				}
 			}
 
-			.__slider-but {
-				bottom: -4.625em;
-			}
-
-			.slick-dots {
-				bottom: -4.625em;
+			.__slider-but,
+			.slick-dots{
+				bottom: -113px;
 			}
 		}
 	}
@@ -78,7 +75,7 @@
 		.__priceNumControllerAdd {
 			flex-direction: row;
 			div {
-				margin: 0.5em 0;
+				margin: 0.65em 0;
 			}
 		}
 	}
@@ -169,21 +166,6 @@
 			}
 		}
 	}
-
-	.__verticale-product {
-		&:nth-child(2n-1) {
-			.__containeVer {
-				margin: 0 100px 0 0;
-			}
-		}
-
-		&:nth-child(2n) {
-			.__containeVer {
-				margin: 0 0 0 100px;
-			}
-		}
-	}
-
 	.main-part-blog-post__txt-div {
 		height: 166px;
 	}
@@ -224,25 +206,25 @@
 
 		&:nth-child(1) {
 			.__containeVer {
-				margin: 0 30px 0 0;
+				margin: 0 24px 0 0;
 			}
 		}
 
 		&:nth-child(2) {
 			.__containeVer {
-				margin: 0 20px 0 10px;
+				margin: 0 16px 0 8px;
 			}
 		}
 
 		&:nth-child(3) {
 			.__containeVer {
-				margin: 0 10px 0 20px;
+				margin: 0 8px 0 12px;
 			}
 		}
 
 		&:nth-child(4) {
 			.__containeVer {
-				margin: 0 0 0 30px;
+				margin: 0 0 0 20px;
 			}
 		}
 	}

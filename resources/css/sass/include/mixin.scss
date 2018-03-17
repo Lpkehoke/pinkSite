@@ -31,10 +31,10 @@
 	height: 0;
 	width: 0;
 	top: 0;
-	right: 0;
 	border: $size solid $color;
 	border-bottom-color: transparent;
 	border-left-color: transparent;
+	text-transform: uppercase;
 
 	span {
 		position: absolute;

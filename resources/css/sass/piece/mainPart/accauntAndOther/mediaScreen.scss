@@ -13,6 +13,14 @@
 		h2 {
 			font-size: 34px;
 		}
+
+		.main-part__cart .cart__main .cart__order {
+			padding-bottom: 1em;
+		}
+	}
+
+	.wrapper .main-part__registr-wrapper .main-part__registr .registr__form form button {
+		width: 210px;
 	}
 
 	.main-part__accountInfo {
@@ -92,6 +100,10 @@
 		}
 	}
 
+	.wrapper .main-part__registr-wrapper .main-part__registr .registr__form form button {
+		width: 16.375em;
+	}
+
 	.main-part__registr-wrapper {
 		.registr__steps {
 			width: 312px;
@@ -103,6 +115,10 @@
 
 		h2 {
 			font-size: 42px;
+		}
+
+		.main-part__cart .cart__main .cart__order {
+			padding-bottom: 0em;
 		}
 	}
 

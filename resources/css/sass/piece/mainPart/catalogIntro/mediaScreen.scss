@@ -8,6 +8,10 @@
 			.catalogIntro__dishes-ver-div {
 				margin: 0;
 			}
+
+			h1 {
+				font-size: 62px;
+			}
 		}
 
 		aside {
@@ -171,6 +175,12 @@
 }
 
 @media screen and (min-width: 576px) {
+	main {
+		h1 {
+			font-size: 72px;
+		}
+	}
+
 	.main-part-catalogIntro__main-row {
 		justify-content: left;
 	}
@@ -213,28 +223,33 @@
 		}
 	}
 
-	.catalogIntro__dishes {
-		padding: 0;
-		.row {
-			&.__reverse {
-				.catalogIntro__dishes-ver-div {
-				    padding: 15px 16px 15px 0px;
-				}
+	// .catalogIntro__dishes {
+	// 	padding: 0;
+	// 	.row {
+	// 		.catalogIntro__dishes-ver-div {
+	// 		    padding: 0 0 5px 0;
+	// 		}
 
-				.catalogIntro__dishes-hor-div  {
-				    padding: 0px 10px 6px 13px;
-				}
-			}
+	// 		&.__reverse {
+	// 			.catalogIntro__dishes-ver-div {
+	// 			       padding: 0 0 5px 0;
+	// 			}
 
-			.catalogIntro__dishes-ver-div {;
-				padding: 16px 8px 16px 6px;
-			}
-		}
-	}
+	// 			.catalogIntro__dishes-hor-div  {
+	// 			    padding: 0px 10px 6px 13px;
+	// 			}
+	// 		}
+	// 	}
+	// }
 
-	.wrapper .main-part-catalogIntro main .catalogIntro__dishes .row .catalogIntro__dishes-hor-div {
-		padding: 0 24px 0px 0px;
-	}
+	// .wrapper .main-part-catalogIntro main .catalogIntro__dishes .row {
+	// 	.catalogIntro__dishes-hor-div {
+	// 	    padding: 0px 10px 5px 14px;
+	// 	}
+	// 	// .catalogIntro__first-dishes {
+	// 	// 	padding: 0px 22px 5px 0px;
+	// 	// }
+	// }
 }
 @media screen and (min-width: 768px) {
 	.main-part-catalogList-main {
@@ -319,6 +334,26 @@
 			}
 		}
 	}
+
+	.wrapper .main-part-catalogIntro main .catalogIntro__dishes .row .catalogIntro__dishes-hor-div {
+		padding: 0px 0px 0px 7px;
+	}
+
+	// .row {
+	// 	&.__reverse {
+	// 		.catalogIntro__dishes-ver-div {
+	// 		    padding: 15px 20px 15px 0px;
+	// 		}
+
+	// 		.catalogIntro__dishes-hor-div  {
+	// 		    padding: 0px 10px 6px 13px;
+	// 		}
+	// 	}
+
+	// 	.catalogIntro__dishes-ver-div {;
+	// 		    padding: 15px 0px 20px 0px;
+	// 	}
+	// }
 }
 
 @media screen and (min-width: 1200px) {
@@ -463,6 +498,15 @@
 
 		.catalogInfo__list-first {
 			margin-right: 20px;
+		}
+	}
+
+	.main-part-catalogGrid {
+		margin-bottom: 64px;
+
+		.main-part-catalogList-main .main-part-catalogList__wrapper .main-part-catalogIntro__discription p {
+			max-height: 212px;
+			margin-bottom: 0;
 		}
 	}
 }

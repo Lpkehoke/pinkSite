@@ -5,6 +5,18 @@
 			order: 1;
 			padding: 0;
 
+			.blog__post-full {
+				padding: 7px 10px;
+			}
+
+			.blog__last-post-article {
+				padding: 7px 10px;
+			}
+
+			.blog__comments {
+				padding: 7px 10px;
+			}
+
 			.blog-post__ideas {
 				flex-direction: column;
 			}
@@ -31,6 +43,10 @@
 					margin: 0;
 				}
 			}
+
+			.row.__comment-place {
+				margin: 0;
+			}
 		}
 
 		aside {
@@ -48,6 +64,22 @@
 		main {
 			.blog-post__ideas {
 				flex-direction: row;
+			}
+
+			.row.__comment-place {
+				margin: 0 15px;
+			}
+
+			.blog__post-full {
+				padding: 44px 60px 50px 50px;
+			}
+
+			.blog__last-post-article {
+				padding: 7px 50px;
+			}
+
+			.blog__comments {
+				padding: 44px 46px 0 50px;
 			}
 
 			.blog__comments-comment {

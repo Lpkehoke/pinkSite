@@ -1,6 +1,15 @@
 @media screen and (min-width: 300px) {
 
 	.main-part-catalogIntro__main-row {
+		.main-part-new__vertical {
+			.row {
+				display: flex;
+				justify-content: center;
+			}
+		}
+	}
+
+	.main-part-catalogIntro__main-row {
 		justify-content: center;
 		main {
 			order: 1;
@@ -39,6 +48,7 @@
 	.__result-of-search-numPage {
 		margin-top: -2em;
 		margin-bottom: 1em;
+		margin-left: 1em;
 	}
 
 	.main-part-catalogList-main {
@@ -79,6 +89,10 @@
 						align-items: center;
 						text-align: center;
 
+						.__addToCart {
+							margin-bottom: 25px;
+						}
+
 						.__priceNumControllerAdd {
 							display: flex;
 							align-items: center;
@@ -103,13 +117,14 @@
 
 	.main-part-catalogIntro__numPage {
 		word-spacing: 3px;
+	}
 
-		.catalogIntro__advertising {
-			padding: 6px;
+	.catalogIntro__advertising {
+		padding: 6px;
 
-			.row {
-				padding-right: 20px;
-			}
+		.row {
+			margin: 27px 10px 55px 10px;
+			padding-right: 20px;
 		}
 	}
 
@@ -125,7 +140,7 @@
 		}
 
 		.catalogInfo__item-discription {
-			margin-top: 1em;
+			margin-top: 2em;
 		}
 
 		.catalogInfo__list-wrapper:nth-child(2) {
@@ -223,33 +238,6 @@
 		}
 	}
 
-	// .catalogIntro__dishes {
-	// 	padding: 0;
-	// 	.row {
-	// 		.catalogIntro__dishes-ver-div {
-	// 		    padding: 0 0 5px 0;
-	// 		}
-
-	// 		&.__reverse {
-	// 			.catalogIntro__dishes-ver-div {
-	// 			       padding: 0 0 5px 0;
-	// 			}
-
-	// 			.catalogIntro__dishes-hor-div  {
-	// 			    padding: 0px 10px 6px 13px;
-	// 			}
-	// 		}
-	// 	}
-	// }
-
-	// .wrapper .main-part-catalogIntro main .catalogIntro__dishes .row {
-	// 	.catalogIntro__dishes-hor-div {
-	// 	    padding: 0px 10px 5px 14px;
-	// 	}
-	// 	// .catalogIntro__first-dishes {
-	// 	// 	padding: 0px 22px 5px 0px;
-	// 	// }
-	// }
 }
 @media screen and (min-width: 768px) {
 	.main-part-catalogList-main {
@@ -273,6 +261,23 @@
 					}
 				}
 			}
+		}
+	}
+
+	.catalogIntro__advertising {
+		padding: 0px;
+
+		&.catalogIntro__advertisingIntro {
+			.row {
+				margin-right: 13px;
+				margin-left: 15px;
+			}
+		}
+
+		.row {
+			padding-right: 40px;
+			margin-left: 0;
+			margin-right: 0;
 		}
 	}
 
@@ -315,9 +320,20 @@
 		}
 	}
 
+
+	.main-part-catalogIntro__main-row {
+		.main-part-new__vertical {
+			.row {
+				display: flex;
+				justify-content: left;
+			}
+		}
+	}
+
 	.__result-of-search-numPage {
 		margin-top: 0;
 		margin-bottom: 0;
+		margin-left: 0;
 	}
 
 	.main-part__catalogInfo {
@@ -336,27 +352,54 @@
 	}
 
 	.wrapper .main-part-catalogIntro main .catalogIntro__dishes .row .catalogIntro__dishes-hor-div {
-		padding: 0px 0px 0px 7px;
+		padding: 0px 7px 0px 7px;
 	}
 
-	// .row {
-	// 	&.__reverse {
-	// 		.catalogIntro__dishes-ver-div {
-	// 		    padding: 15px 20px 15px 0px;
-	// 		}
+	.catalogIntro__advertising {
+		padding: 0 35px 0 15px;
 
-	// 		.catalogIntro__dishes-hor-div  {
-	// 		    padding: 0px 10px 6px 13px;
-	// 		}
-	// 	}
+		&.catalogIntro__advertisingIntro {
+			padding: 0;
+			.row {
+				margin-right: 10px;
+				margin-left: 5px;
+			}
+		}
+	}
 
-	// 	.catalogIntro__dishes-ver-div {;
-	// 		    padding: 15px 0px 20px 0px;
-	// 	}
-	// }
+
+	.row {
+		&.__reverse {
+			.catalogIntro__dishes-ver-div {
+			    padding: 15px 20px 15px 5px;
+			}
+
+			.catalogIntro__dishes-hor-div  {
+			    padding: 0px 10px 6px 13px;
+			}
+		}
+
+	}
+
+	.main-part-catalogGrid .__verticale-product:nth-child(3) .__containeVer {
+		margin-left: -20px !important;
+	}
+
+	.main-part-catalogGridSearch .__result-of-search .col-lg-3 {
+		margin-left: 140px;
+	}
+
+	.__result-of-search .col-lg-6 {
+		margin-left: 20px;
+	}
 }
 
 @media screen and (min-width: 1200px) {
+	.catalogIntro__advertising {
+		padding: 0;
+		padding-right: 25px;
+	}
+
 	.main-part-catalogList-main {
 		text-align: left;
 
@@ -502,11 +545,27 @@
 	}
 
 	.main-part-catalogGrid {
-		margin-bottom: 64px;
 
-		.main-part-catalogList-main .main-part-catalogList__wrapper .main-part-catalogIntro__discription p {
-			max-height: 212px;
-			margin-bottom: 0;
+		.main-part-catalogList-main .main-part-catalogList__wrapper .main-part-catalogIntro__discription{
+
+			p {
+				max-height: 212px;
+				margin-bottom: 0;
+			}
+
+			.__addToCart {
+				margin-bottom: 0 !important;
+			}
 		}
+	}
+
+
+	.main-part-catalogGridSearch .__result-of-search .col-lg-3 {
+		padding-right: 40px;
+		margin-left: 0;
+	}
+
+	.__result-of-search .col-lg-6 {
+		margin-left: 0;
 	}
 }

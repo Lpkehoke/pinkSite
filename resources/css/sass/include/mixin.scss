@@ -1,10 +1,38 @@
 @mixin center() {
-	display: flex;
-	align-items: center;
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+	-webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 @mixin makeBorder($color) {
 	border-bottom: 10px solid transparent;
+	background-image:
+		-webkit-gradient(linear, left top, left bottom, from($color), to($color)),
+		-webkit-gradient(linear, left top, right bottom, color-stop(50.5%, transparent), color-stop(50.5%, $color)),
+		-webkit-gradient(linear, right top, left bottom, color-stop(50.5%, transparent), color-stop(50.5%, $color)),
+		-webkit-gradient(linear, left bottom, right top, color-stop(50.5%, transparent), color-stop(50.5%, $color)),
+		-webkit-gradient(linear, right bottom, left top, color-stop(50.5%, transparent), color-stop(50.5%, $color));
+	background-image:
+		-webkit-linear-gradient($color, $color),
+		-webkit-linear-gradient(top left, transparent 50.5%, $color 50.5%),
+		-webkit-linear-gradient(top right, transparent 50.5%, $color 50.5%),
+		-webkit-linear-gradient(bottom left, transparent 50.5%, $color 50.5%),
+		-webkit-linear-gradient(bottom right, transparent 50.5%, $color 50.5%);
+	background-image:
+		-moz-linear-gradient($color, $color),
+		-moz-linear-gradient(top left, transparent 50.5%, $color 50.5%),
+		-moz-linear-gradient(top right, transparent 50.5%, $color 50.5%),
+		-moz-linear-gradient(bottom left, transparent 50.5%, $color 50.5%),
+		-moz-linear-gradient(bottom right, transparent 50.5%, $color 50.5%);
+	background-image:
+		-o-linear-gradient($color, $color),
+		-o-linear-gradient(top left, transparent 50.5%, $color 50.5%),
+		-o-linear-gradient(top right, transparent 50.5%, $color 50.5%),
+		-o-linear-gradient(bottom left, transparent 50.5%, $color 50.5%),
+		-o-linear-gradient(bottom right, transparent 50.5%, $color 50.5%);
 	background-image:
 		linear-gradient($color, $color),
 		linear-gradient(to bottom right, transparent 50.5%, $color 50.5%),
@@ -13,9 +41,18 @@
 		linear-gradient(to top left, transparent 50.5%, $color 50.5%);
 	background-repeat: repeat, repeat-x, repeat-x, repeat-x, repeat-x;
 	background-position: 0 0, 10px 0, 10px 0, 10px 100%, 10px 100%;
-	background-size: auto auto, 20px 20px, 20px 20px, 20px 20px, 20px 20px;
-	background-clip: padding-box, border-box, border-box, border-box, border-box;
-	background-origin: padding-box, border-box, border-box, border-box, border-box;
+	-webkit-background-size: auto auto, 20px 20px, 20px 20px, 20px 20px, 20px 20px;
+	   -moz-background-size: auto auto, 20px 20px, 20px 20px, 20px 20px, 20px 20px;
+	     -o-background-size: auto auto, 20px 20px, 20px 20px, 20px 20px, 20px 20px;
+	        background-size: auto auto, 20px 20px, 20px 20px, 20px 20px, 20px 20px;
+	-webkit-background-clip: padding-box, border-box, border-box, border-box, border-box;
+	   -moz-background-clip: padding-box, border-box, border-box, border-box, border-box;
+	     -o-background-clip: padding-box, border-box, border-box, border-box, border-box;
+	        background-clip: padding-box, border-box, border-box, border-box, border-box;
+	-webkit-background-origin: padding-box, border-box, border-box, border-box, border-box;
+	   -moz-background-origin: padding-box, border-box, border-box, border-box, border-box;
+	     -o-background-origin: padding-box, border-box, border-box, border-box, border-box;
+	        background-origin: padding-box, border-box, border-box, border-box, border-box;
 }
 
 @mixin makeArrow($side, $size, $color) {
@@ -38,7 +75,11 @@
 
 	span {
 		position: absolute;
-		transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		   -moz-transform: rotate(45deg);
+		    -ms-transform: rotate(45deg);
+		     -o-transform: rotate(45deg);
+		        transform: rotate(45deg);
 		color: white;
 		font-weight: bold;
 	}

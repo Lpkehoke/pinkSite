@@ -28,9 +28,12 @@
 
 			.__slider-but,
 			.slick-dots {
-				bottom: -74px;
+				bottom: -30px;
 			}
 		}
+	}
+	.slick-dots {
+		left: 0;
 	}
 
 	.main-part__newProduct {
@@ -153,6 +156,14 @@
 			}
 		}
 	}
+
+	.first-slider {
+		.__slider-but,
+		.slick-dots {
+			bottom: -85px !important;
+		}
+	}
+
 }
 @media screen and (min-width: 768px) {
 	.main-part__slider {
@@ -309,8 +320,10 @@
 		}
 
 		.main-part__blog {
+			width: 100%;
 			.main-part-blog__post {
 				padding: 0;
+				width: 100%;
 
 				&:nth-child(2n) {
 					padding-right: 15px;
@@ -328,6 +341,20 @@
 					margin-bottom: 15px;
 				}
 			}
+		}
+
+		.main-part__statistic {
+			height: 20em;
+		}
+
+		.__verticale-discription {
+			.__numController {
+				margin-right: -10px !important;
+			}
+		}
+
+		.main-part__reviews {
+			height: 466px;
 		}
 	}
 }

@@ -67,7 +67,6 @@
 			}
 
 			.row.__comment-place {
-				margin: 0 15px;
 			}
 
 			.blog__post-full {
@@ -99,6 +98,10 @@
 		main {
 			order: 0;
 			padding-right: 7px;
+
+			.blog__last-post-article {
+				padding: 7px 5px;
+			}
 		}
 
 		aside {
@@ -115,6 +118,9 @@
 	.main-part-blog__main-row {
 
 		main {
+			.blog__last-post-article {
+				padding: 7px 50px;
+			}
 			.blog__imgs {
 				flex-direction: row;
 				align-items: flex-start;

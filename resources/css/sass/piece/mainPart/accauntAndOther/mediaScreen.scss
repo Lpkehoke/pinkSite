@@ -6,8 +6,12 @@
 	}
 
 	.main-part__registr-wrapper {
+		.registr__steps {
+			font-size: 14px;
+		}
+
 		input {
-			width: 200px;
+			width: 150px;
 		}
 
 		h2 {
@@ -107,6 +111,7 @@
 	.main-part__registr-wrapper {
 		.registr__steps {
 			width: 312px;
+			font-size: 16px;
 		}
 
 		input {
@@ -147,7 +152,7 @@
 @media screen and (min-width: 768px) {
 	.main-part__accountInfo {
 		.accountInfo__places {
-			padding: 33px 194px;
+			padding: 40px 194px;
 		}
 	}
 

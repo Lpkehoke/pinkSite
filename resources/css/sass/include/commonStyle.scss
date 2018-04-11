@@ -11,6 +11,10 @@ h3 {
 	margin: 0;
 }
 
+body {
+	overflow-x: hidden;
+}
+
 html,
 body,
 .wrapper {
@@ -20,8 +24,34 @@ body,
 	width: 100%;
 	min-height: 100%;
 	font-size: 16px;
-	font-family: 'Quattrocento Sans', sans-serif;
+	font-family: 'Quattrocento', sans-serif;
 	background: $white/5*4;
+}
+
+header,
+footer,
+h1,
+h2,
+h3,
+button,
+input,
+aside,
+.main-part-hor__tag-new,
+.main-part-blog-post__date,
+.__way,
+.catalogInfo__item-main-img-teg {
+	font-family: 'Quattrocento Sans', sans-serif;
+}
+
+.container,
+.container-fluid {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.row {
+	margin-left: 0;
+	margin-right: 0;
 }
 
 .__devide {
@@ -104,6 +134,12 @@ body,
 	&:focus {
 		outline: none;
 	}
+
+	&:hover {
+		border: 1px solid $pink;
+		background: $white;
+		color: $pink;
+	}
 }
 
 .__numController {
@@ -167,9 +203,14 @@ body,
 			height: 0;
 			flex-grow: 1;
 
+			& > div:first-child {
+				width: 100%;
+			}
+
 			h3 {
 				font-weight: bold;
 				margin-top: 47px;
+				width: 100%;
 			}
 
 			button {
@@ -178,7 +219,8 @@ body,
 
 			.__verticale-txt {
 				height: 0;
-				overflow: hidden;
+				width: 100%;
+				overflow: auto;
 				flex-grow: 1;
 				margin-top: 19px;
 				line-height: 1.7;
@@ -197,8 +239,10 @@ body,
 
 				.__numController {
 					div {
-						line-height: 17px;
-						padding-left: 0;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						padding: 0;
 					}
 				}
 
@@ -224,6 +268,7 @@ body,
 		color: #d0d0d0;
 		text-decoration:line-through;
 	}
+
 }
 
 .__namePage {
@@ -240,7 +285,6 @@ body,
 		margin-top: 24px;
 	}
 }
-
 
 .__way {
 	height: 75px;
@@ -273,6 +317,10 @@ body,
 	.__result-of-search-numPage {
 		@include center();
 
+		&.col-lg-6 {
+			padding: 0;
+		}
+
 		img {
 			cursor: pointer;
 		}
@@ -282,9 +330,14 @@ body,
 			margin-left: 19px;
 		}
 
-		img:nth-child(2) {
+		a:nth-child(2) {
 			margin: 0 10px;
 		}
+	}
+
+	.col-lg-3 {
+		padding-left: 0;
+		padding-right: 25px;
 	}
 
 	.__result-of-search-dropMeny-div {
@@ -310,6 +363,11 @@ body,
 	margin-bottom: 90px;
 	margin-top: 10px;
 	word-spacing: 1em;
+
+	.row {
+		width: 100%;
+		text-align: center;
+	}
 
 	.main-part-catalogIntro__numPage-current {
 		color: black;
@@ -356,14 +414,33 @@ body,
 		font-weight: bold;
 		border-radius: 5px;
 		cursor: pointer;
+
+		&:hover {
+			border: 1px solid $white;
+			background: $pink;
+			color: $white;
+		}
 	}
 }
 
 .__comment-place {
+	.col-md-6,
+	.col-sm-12 {
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	.col-md-6:first-child {
+		padding-right: 10px;
+	}
 	.__comment-input {
 		border-radius: 5px;
 		padding: 5px;
 		border: 1px solid $white/5*4;
+
+		&:focus {
+			border: 1px solid $blue;
+		}
 	}
 
 	.__pink-star {

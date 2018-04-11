@@ -5,7 +5,9 @@
 		padding: 0;
 
 		.catalogIntro__dishes {
-			font-family: 'Yellowtail', cursive;
+			h1 {
+				font-family: 'Yellowtail', cursive;
+			}
 			display: flex;
 			justify-content: center;
 			color: $white;
@@ -99,7 +101,6 @@
 		.catalogIntro__advertising {
 
 			.row {
-				margin: 46px 10px 55px 0px;
 				border: 2px solid $blue;
 				background: $white/5*4;
 				color: $blue;
@@ -109,6 +110,7 @@
 				align-items: flex-end;
 				justify-content: center;
 				border-radius: 5px;
+				padding-right: 10px;
 
 				.advertising {
 					margin: 28px 10px 8px 0px;
@@ -170,6 +172,10 @@
 						border-top: 1px solid $white/5*4;
 						font-weight: bold;
 						cursor: pointer;
+
+						&:hover {
+							text-decoration: underline;
+						}
 					}
 				}
 
@@ -224,6 +230,12 @@
 						text-transform: uppercase;
 						outline: none;
 						font-weight: bold;
+
+						&:hover {
+							background: $pink;
+							color: $white;
+							border: 0;
+						}
 					}
 				}
 			}
@@ -253,9 +265,14 @@
 
 		.main-part-catalogList__wrapper {
 			display: flex;
+			width: 100% !important;
 			max-width: 848px;
 			border: 2px solid $white/5*4;
 			border-radius: 5px;
+
+			p {
+				width: 100%;
+			}
 
 			.main-part-catalogIntro__img-div-list {
 				height: 400px;
@@ -288,7 +305,7 @@
 				p {
 					line-height: 1.7;
 					flex-grow: 1;
-					overflow: hidden;
+					overflow: auto;
 				}
 
 				.__priceNumControllerAdd {
@@ -460,6 +477,7 @@
 
 	.main-part-new__vertical {
 		margin-top: 30px;
+
 		.__verticale-product .__containeVer .__verticale-discription h3 {
 			margin: 0;
 

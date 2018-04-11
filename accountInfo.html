@@ -45,7 +45,9 @@
 					<div class="header__secondLine container">
 						<div class="row header__iner-secondLIne">
 							<div class="header__logo">
-								<img src="resources/img/logoHeader.png">
+								<a href="index.html">
+									<img src="resources/img/logoHeader.png">
+								</a>
 							</div>
 							<nav class="header__nav">
 								<ul class="header-nav__main">
@@ -60,13 +62,13 @@
 										<div class="__submenu"></div>
 									</li>&nbsp;&nbsp;
 									<li>
-										<a href="#">CATALOG</a>
+										<a href="catalogIntro.html">CATALOG</a>
 									</li>&nbsp;&nbsp;
 									<li>
-										<a href="#">BLOG</a>
+										<a href="blogList.html">BLOG</a>
 									</li>&nbsp;&nbsp;
 									<li>
-										<a href="#">ABOUT US</a>
+										<a href="about.html">ABOUT US</a>
 									</li>&nbsp;&nbsp;
 								</ul>
 							</nav>
@@ -77,7 +79,7 @@
 										<div class="__submenu"></div>
 									</li>
 									<li class="header__purchase">
-										<a href="#">
+										<a href="cart.html">
 											<i class="fas fa-shopping-cart header__purchaseIcon"></i>
 										</a>
 										<div class="__submenu"></div>
@@ -106,30 +108,40 @@
 				</div>
 				<main class="row main-part__registr-wrapper">
 					<div class="main-part__accountInfo">
-						<div class="accountInfo__btns">
-							<button class="__active">Personal info</button>
-							<button>Shipping </button>
-							<button>Billing</button>
+						<div class="accountInfo__btns nav nav-tabs" role="tablist">
+							<button class="accInfoBnt __active active" data-target="#info" role="tab" data-toggle="pill">Personal info</button>
+							<button class="accInfoBnt" data-target="#shipping" role="tab" data-toggle="pill">Shipping </button>
+							<button class="accInfoBnt" data-target="#billing" role="tab" data-toggle="pill">Billing</button>
 						</div>
-						<div class="accountInfo__places">
-							<div class="accountInfo__infoPlace-div">
-								<span>Full name</span>
-								<span>Jessica Doe&nbsp;<i class="far fa-edit"></i></span>
-							</div>
-							<div class="accountInfo__infoPlace-div">
-								<span>E-mail</span>
-								<span>customer@example.com&nbsp;<i class="far fa-edit"></i></span>
-							</div>
-							<div class="accountInfo__infoPlace-div">
-								<span>Password</span>
-								<span>* * * * * * * *&nbsp;<i class="far fa-edit"></i></span>
-							</div>
-							<div class="accountInfo__infoPlace-div accountInfo__checkBox-div">
-								<span>
-									<input type="checkbox" checked class="__checkbox">&nbsp;Subscribe to our latest news
-								</span>
-							</div>
-							<button>Update information</button>
+						<div class="tab-content">
+							<form role="tabpanel" id="info" class="tab-pane active accountInfo__places">
+								<div class="accountInfo__infoPlace-div">
+									<span>Full name</span>
+									<label>
+										<input value="Jessica Doe" class="accauntInfo__inputs"><i class="far fa-edit"></i>
+									</label>
+								</div>
+								<div class="accountInfo__infoPlace-div">
+									<span>E-mail</span>
+									<label>
+										<input value="customer@example.com" class="accauntInfo__inputs"><i class="far fa-edit"></i>
+									</label>
+								</div>
+								<div class="accountInfo__infoPlace-div">
+									<span>Password</span>
+									<label>
+										<input value="*******" class="accauntInfo__inputs"><i class="far fa-edit"></i>
+									</label>
+								</div>
+								<div class="accountInfo__infoPlace-div accountInfo__checkBox-div">
+									<span>
+										<input type="checkbox" checked class="__checkbox">&nbsp;Subscribe to our latest news
+									</span>
+								</div>
+								<button>Update information</button>
+							</form>
+							<div role="tabpanel" id="shipping" class="tab-pane fade accountInfo__places"></div>
+							<div role="tabpanel" id="billing" class="tab-pane fade accountInfo__places"></div>
 						</div>
 					</div>
 				</main>
@@ -148,7 +160,7 @@
 									<a href="tel:+610891501029">+61 (08) 9150 1029</a>
 								</div>
 								<div>
-									<a href="#">sales@example.com</a>
+									<a href="mailto:sales@example.com">sales@example.com</a>
 								</div>
 								<div class="footer__pay-img-wrapper">
 									<div>We accept:</div>

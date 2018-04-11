@@ -89,6 +89,7 @@
 						border-radius: 5px;
 						border: 1px solid $white/5*4;
 						padding: 14px;
+						outline: none;
 					}
 				}
 
@@ -96,19 +97,29 @@
 					height: 45px;
 					border: 1px solid $pink;
 					background: $white;
-					border-radius: 26px;
 					color: $pink;
+					border-radius: 26px;
 					font-weight: bold;
 					margin-top: 20px;
 					letter-spacing: 3.5px;
 					text-transform: uppercase;
+
+					&:hover {
+						border: 0;
+						background: $pink;
+						color: $white;
+					}
 				}
 			}
 		}
 	}
 
 	.main-part__accountInfo {
-		margin: 100px auto;
+		margin: 100px 0;
+
+		.nav-tabs {
+			border: 0;
+		}
 
 		.accountInfo__btns {
 			display: flex;
@@ -132,22 +143,31 @@
 		}
 
 		.accountInfo__places {
-			display: flex;
-			flex-direction: column;
 			border: 1px solid $blue;
-
+			text-align: center;
 
 			.accountInfo__infoPlace-div {
 				display: flex;
 				justify-content: space-between;
 				border-bottom: 1px solid $white/5*4;
-				padding: 9px 0;
+				padding: 5px 0;
 
 				span:nth-child(1) {
 					font-weight: bold;
 				}
 
 				span:nth-child(2) {
+					color: $blue;
+				}
+
+				.accauntInfo__inputs {
+					border: 0;
+					outline: none;
+					text-align: right;
+					padding-right: 4px;
+					color: $blue;
+				}
+				i {
 					color: $blue;
 				}
 
@@ -171,6 +191,12 @@
 				letter-spacing: 3.5px;
 				text-transform: uppercase;
 				margin: 15px auto;
+
+				&:hover {
+					border: 0;
+					background: $pink;
+					color: $white;
+				}
 			}
 		}
 	}
@@ -259,12 +285,24 @@
 					border: 1px solid $pink;
 					background: $white;
 					color: $pink;
+
+					&:hover {
+						border: 0;
+						background: $pink;
+						color: $white;
+					}
 				}
 
 				button:nth-child(2) {
 					border: 0;
 					background: $pink;
 					color: $white;
+
+					&:hover {
+						border: 1px solid $pink;
+						background: $white;
+						color: $pink;
+					}
 				}
 			}
 		}
@@ -272,6 +310,7 @@
 
 	.main-part__about {
 		margin-top: 90px;
+		width: 100%;
 
 		.main-parrt-new__header {
 			display: flex;

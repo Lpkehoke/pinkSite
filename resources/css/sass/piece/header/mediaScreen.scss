@@ -92,28 +92,32 @@
 
 @media screen and (min-width: 992px) {
 	.header {
-		.header__info-inerWrapper {
-			.header-info__left  {
-				flex-direction: row;
-				justify-content: flex-start;
+		.bg__info {
+			height: 4.12em;
+			.header__info-inerWrapper {
+				.header-info__left  {
+					flex-direction: row;
+					justify-content: flex-start;
 
-				div {
+					div {
+						padding: 0;
+					}
+
+					div:nth-child(2) {
+						margin-left: 4.5em;
+					}
+				}
+				.header-info__right {
 					padding: 0;
-				}
-
-				div:nth-child(2) {
-					margin-left: 4.5em;
+					justify-content: flex-end;
 				}
 			}
-			.header-info__right {
-				padding: 0;
-				justify-content: flex-end;
-			}
-		}
 
-		.header__iner-secondLIne {
-			.header__nav {
-				margin-left: 3.5em;
+			.header__iner-secondLIne {
+				height: 6.25em;
+				.header__nav {
+					margin-left: 3.5em;
+				}
 			}
 		}
 	}
